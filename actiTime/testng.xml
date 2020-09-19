@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="sBrowser" value="chrome"/>
+    <classes>
+      <class name="com.actiTime.scripts.DemoScreenshot"/>
+      <class name="com.actiTime.scripts.TestValidLoginPage"/>
+      <class name="com.actiTime.scripts.TestCreateUser"/>
+      <class name="com.actiTime.scripts.TestIssuesDate"/>
+      <class name="com.actiTime.scripts.TestProductEdition"/>
+      <class name="com.actiTime.scripts.TestInvalidLoginpage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

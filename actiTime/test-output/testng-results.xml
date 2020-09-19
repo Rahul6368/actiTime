@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="1" total="3" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[PassCount :1]]>
+    </line>
+    <line>
+      <![CDATA[FailCount :1]]>
+    </line>
+  </reporter-output>
+  <suite name="Failed suite [Suite]" duration-ms="81617" started-at="2020-09-18T17:48:11Z" finished-at="2020-09-18T17:49:33Z">
+    <groups>
+    </groups>
+    <test name="Test(failed)" duration-ms="81617" started-at="2020-09-18T17:48:11Z" finished-at="2020-09-18T17:49:33Z">
+      <class name="com.actiTime.scripts.TestValidLoginPage">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.actiTime.scripts.TestValidLoginPage@464bee09]" name="openBrowser" is-config="true" duration-ms="30072" started-at="2020-09-18T17:48:11Z" finished-at="2020-09-18T17:48:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.actiTime.scripts.TestValidLoginPage@464bee09]" name="openApplication" is-config="true" duration-ms="8705" started-at="2020-09-18T17:48:41Z" finished-at="2020-09-18T17:48:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="test_ValidLogin()[pri:0, instance:com.actiTime.scripts.TestValidLoginPage@464bee09]" name="test_ValidLogin" duration-ms="16354" started-at="2020-09-18T17:48:50Z" finished-at="2020-09-18T17:49:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ValidLogin -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.actiTime.scripts.TestValidLoginPage@464bee09]" name="closeBrowser" is-config="true" duration-ms="2153" started-at="2020-09-18T17:49:06Z" finished-at="2020-09-18T17:49:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_ValidLogin status=SUCCESS method=TestValidLoginPage.test_ValidLogin()[pri:0, instance:com.actiTime.scripts.TestValidLoginPage@464bee09] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="printReport()[pri:0, instance:com.actiTime.scripts.TestValidLoginPage@464bee09]" name="printReport" is-config="true" duration-ms="654" started-at="2020-09-18T17:49:33Z" finished-at="2020-09-18T17:49:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[PassCount :1]]>
+            </line>
+            <line>
+              <![CDATA[FailCount :1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- printReport -->
+      </class> <!-- com.actiTime.scripts.TestValidLoginPage -->
+      <class name="com.actiTime.scripts.DemoScreenshot">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.actiTime.scripts.DemoScreenshot@f6c48ac]" name="openBrowser" is-config="true" duration-ms="7486" started-at="2020-09-18T17:49:08Z" finished-at="2020-09-18T17:49:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openApplication()[pri:0, instance:com.actiTime.scripts.DemoScreenshot@f6c48ac]" name="openApplication" is-config="true" duration-ms="14125" started-at="2020-09-18T17:49:16Z" finished-at="2020-09-18T17:49:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="FAIL" signature="test_FailureScreenshot()[pri:0, instance:com.actiTime.scripts.DemoScreenshot@f6c48ac]" name="test_FailureScreenshot" duration-ms="40" started-at="2020-09-18T17:49:30Z" finished-at="2020-09-18T17:49:30Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at com.actiTime.scripts.DemoScreenshot.test_FailureScreenshot(DemoScreenshot.java:12)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_FailureScreenshot -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.actiTime.scripts.DemoScreenshot@f6c48ac]" name="closeBrowser" is-config="true" duration-ms="2313" started-at="2020-09-18T17:49:30Z" finished-at="2020-09-18T17:49:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_FailureScreenshot status=FAILURE method=DemoScreenshot.test_FailureScreenshot()[pri:0, instance:com.actiTime.scripts.DemoScreenshot@f6c48ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.actiTime.scripts.DemoScreenshot -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
+</testng-results>
